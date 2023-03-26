@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- ===== ===== Custom Css ===== ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- ===== ===== Remix Font Icons Cdn ===== ===== -->
+    <link rel="stylesheet" href="fonts/remixicon.css">
+</head>
+
+<body>
+    <!-- ===== ===== Body Main-Background ===== ===== -->
+    <span class="main_bg"></span>
+
+
+    <!-- ===== ===== Main-Container ===== ===== -->
+    <div class="container">
+
+        <!-- ===== ===== Header/Navbar ===== ===== -->
+        <header>
+            <div class="brandLogo">
+                <figure><img src="mentor_logo.jpg" alt="logo" width="60px" height="60px"></figure>
+                <span>Guidr</span>
+                <!-- <div class = "but-container2">
+                    <button onclick="openPopdown()" type="submit"><img src="profile.png" class= "profile_logo" alt="profile"></button>
+                    <div class = "popdown" id="popdown">
+                        <a href="recruitment.html" text-decoration= "none">Recruitments</a>
+                        </div>
+                    </div>-->
+        </div>
+        <div class="action">
+            <div class="profile_logo">
+                <img src="profile.png" onclick="menuToggle();">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="recruitment.html">Recruiters</a></li>
+                    <li><a href="AddQuestion.html">Query</a></li>
+                    <li><a href="meeting.html">Meet with Mentor</a></li>
+                    <li><a href="Login.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        </header>
+
+
+        <!-- ===== ===== User Main-Profile ===== ===== -->
+        <section class="userProfile card">
+            <div class="profile">
+                <figure><img src="profile_person.jpg" alt="profile" width="50px" height="50px"></figure>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== Work & Skills Section ===== ===== -->
+        <section class="work_skills card">
+
+            <!-- ===== ===== Work Contaienr ===== ===== -->
+            <!-- <div class="work">
+                <h1 class="heading">work</h1>
+                <div class="primary">
+                    <h1>Spotify New York</h1>
+                    <span>Primary</span>
+                    <p>170 William Street <br> New York, NY 10038-212-315-51</p>
+                </div>
+
+                <div class="secondary">
+                    <h1>Metropolitan <br> Museum</h1>
+                    <span>Secondary</span>
+                    <p>S34 E 65th Street <br> New York, NY 10651-78 156-187-60</p>
+                </div>
+            </div> -->
+
+            <!-- ===== ===== Skills Contaienr ===== ===== -->
+            <div class="skills">
+                <h1 class="heading">Skills</h1>
+                <ul>
+                    <li style="--i:0">Android</li>
+                    <li style="--i:1">Web-Design</li>
+                    <li style="--i:2">UI/UX</li>
+                    <li style="--i:3">Video Editing</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name">Ankitha</h1>
+                <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>Bangalore, India</span>
+                </div>
+                <p color="white">Student</p>
+            </div>
+            <br>
+            <div class = "but-container">
+            <button class="button button1" onclick="openPopup()">Explore Skill Set</button>
+            <div class = "popup" id="popup">
+                <h1>Assessments</h1>
+                <br>
+                <button class = "button2">Javascript</button>
+                    <br>
+                <button class = "button2">Python</button>
+                    <br>
+                <button class = "button2">Kotlin</button>
+                    <br>
+                <button class = "button2">Selenium</button>
+                <br><br>
+                <button type = "button" class = "button button1" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- ===== ===== Timeline & About Sections ===== ===== -->
+        <section class="timeline_about card">
+            <div class="tabs">
+                <ul>
+
+                    <li class="about active">
+                        <i class="ri-user-3-fill ri"></i>
+                        <span>About</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact_Info">
+                <ul>
+                    <li class="phone">
+                        <h1 class="label">Phone:</h1>
+                        <span class="info">+91 1234567890</span>
+                    </li>
+                    <br>
+                    <li class="address">
+                        <h1 class="label">Address:</h1>
+                        <span class="info">4th Street, M.G. Road<br> Bangalore, 560010</span>
+                    </li>
+                    <br>
+                    <li class="email">
+                        <h1 class="label">E-mail:</h1>
+                        <span class="info">ankithaxyz@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </section>
+    </div>
+<script>
+    let popup=document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    function menuToggle(){
+        const toggleMenu=document.querySelector('.menu');
+        toggleMenu.classList.toggle('active')
+    }
+    // let popdown=document.getElementById("popdown");
+    // function openPopdown(){
+    //     popdown.classList.add("open-popdown");
+    // }
+    // document.getElementById("open-popdown").onmouseout = function() {mouseOut()};
+    // function mouseOut() {
+    //     popup.classList.remove("open-pop");
+    // }
+</script>
+</body>
+
+</html>

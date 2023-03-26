@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #ababcd;
+      background-image: linear-gradient(to bottom, #7574ad 20%, #c8c7dd 20%); /* set a gradient as the background */
+      padding: 25px; /* create a border effect using padding */
+ }
+    #logo {
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      background-image: url("C:\\Users\\bhagy\\Desktop\\Logo.jpeg");
+      background-size: cover;
+      background-position: center center;
+      vertical-align: middle;
+    }
+    #logo-text {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 10px;
+      margin-left: 60px;
+      font-size: 1.2em;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+    #question1 {
+    border-width: 2px;
+    padding: 3px;
+    height: 40px;
+    }
+    #question2 {
+      border-width: 2px;
+      padding: 3px;
+      height: 40px;
+    }
+    #explanation {
+      border-width: 2px;
+    }
+    fieldset {
+      border: 5px solid black;
+      padding: 15px;
+      margin-top: 10px;
+      margin-left: 350px;
+      margin-right: 350px;
+    }
+    .checkbox-container {
+      display: flex;
+      flex-direction: row;
+      margin-right: 10px;
+    }
+    .buttonfx {
+    background-color: #7574ad;
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    .buttonfx:hover{
+      color: black;
+      background-color: green;
+    }
+    .brandLogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brandLogo figure img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+ span {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    left:10%;
+  }
+  </style>
+  <div class="brandLogo">
+    <figure><img src="mentor_logo.jpg" alt="logo" width="60px" height="60px"></figure>
+    <span> Guidr</span>
+</div>
+</head>
+<body>
+  <h1><center>Add Question</h1><br>
+  <fieldset>
+  <form>
+  <label for="question1"></label>
+  <input type="text" id="question1" name="question1" placeholder="Enter the project name" size="80" padding="20px"><br><br>
+  <label for="question2"></label>
+  <input type="text" id="question2" name="question2" placeholder="Enter your Question" size="80"><br><br>
+  <label for="explanation"></label>
+  <textarea id="explanation" name="explanation" placeholder="Give a brief discription about your Question" rows="6" cols="75"></textarea><br><br>
+</form>
+<div class="checkbox-container">
+<label for="domain">Domain:
+<input type="radio" id="domain1" name="domain" value="domain1">
+<label for="domain1">Full Stack Web
+<input type="radio" id="domain2" name="domain" value="domain2">
+<label for="domain2">Android
+<input type="radio" id="domain3" name="domain" value="domain3">
+<label for="domain3">Blockchain
+<input type="radio" id="domain4" name="domain" value="domain4">
+<label for="domain4">Deep Learning
+<input type="radio" id="domai54" name="domain" value="domain5">
+<label for="domain5">Other
+</div>
+<br><br>
+<label for="subdomain">Sub-Domain:
+<input type="checkbox" id="subdomain1" name="subdomain" value="subdomain1">
+<label for="subdomain1">MaticJs
+<input type="checkbox" id="subdomain2" name="subdomain" value="subdomain2">
+<label for="subdomain2">VueJs
+<input type="checkbox" id="subdomain3" name="subdomain" value="subdomain3">
+<label for="subdomain3">React
+<input type="checkbox" id="subdomain4" name="subdomain" value="subdomain4">
+<label for="subdomain4">Express
+<input type="checkbox" id="subdomain5" name="subdomain" value="subdomain5">
+<label for="subdomain5">Node
+<input type="checkbox" id="subdomain6" name="subdomain" value="subdomain6">
+<label for="subdomain6">Flask
+<input type="checkbox" id="subdomain7" name="subdomain" value="subdomain7">
+<label for="subdomain7">Django
+<input type="checkbox" id="subdomain8" name="subdomain" value="subdomain8">
+<label for="subdomain8">Firebase
+<br><br>
+<center><button class="buttonfx" type="submit">Submit</button></center>
+</fieldset>
+</body>
+</html>

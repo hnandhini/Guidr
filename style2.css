@@ -1,0 +1,173 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.brandLogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brandLogo figure img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+ span {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+    left:5%;
+  }
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #c2c2d5;
+}
+
+header {
+    background-color: #7575ad;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 0.5rem;
+    border: 1px solid #2f4f4f;
+    border-radius: 4px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    padding: 0.5
+    rem;
+    border: 1px solid #2f4f4f;
+    border-radius: 4px;
+    }
+    
+    select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.3,8.3L12,16.6L3.7,8.3c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1l9.7,9.7c0.6,0.6,1.5,0.6,2.1,0l9.7-9.7c0.6-0.6,0.6-1.5,0-2.1C21.8,7.7,20.9,7.7,20.3,8.3z"/></svg>') no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+    }
+    
+    input[type="submit"],
+    button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #7574ad;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    }
+    
+    input[type="submit"]:hover,
+    button:hover {
+    background-color: #0062cc;
+    }
+    
+    .book-meeting-btn {
+    grid-column: 1 / span 2;
+    }
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    table th,
+    table td {
+    border: 1px solid #2f4f4f;
+    padding: 0.5rem;
+    }
+    
+    table th {
+    font-weight: bold;
+    text-align: left;
+    background-color: #f2f2f2;
+    }
+    
+    /* Media Queries */
+    
+    @media screen and (max-width: 768px) {
+    main {
+    padding: 0 0.5rem;
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+    }    

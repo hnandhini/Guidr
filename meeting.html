@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentor Booking Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="brandLogo">
+            <figure><img src="mentor_logo.jpg" alt="logo" width="60px" height="60px"></figure>
+            <span> Guidr</span>
+    </div>
+
+        <h1><center>Mentor Booking Dashboard</center></h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Book a Mentor</h2>
+            <form>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="mentor">Mentor:</label>
+                    <select id="mentor" name="mentor" required>
+                        <option value="">--Select a mentor--</option>
+                        <option value="mentor1">Mentor 1</option>
+                        <option value="mentor2">Mentor 2</option>
+                        <option value="mentor3">Mentor 3</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-row">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-row">
+                    <label for="duration">Duration:</label>
+                    <input type="number" id="duration" name="duration" min="1" max="4" required>
+                </div>
+                <button type="submit" class="book-mentor-btn">Book Mentor</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Book a Meeting</h2>
+            <form>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="mentor">Mentor:</label>
+                    <select id="mentor" name="mentor" required>
+                        <option value="">--Select a mentor--</option>
+                        <option value="mentor1">Mentor 1</option>
+                        <option value="mentor2">Mentor 2</option>
+                        <option value="mentor3">Mentor 3</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-row">
+                    <label for="time">Time:</label>
+<input type="time" id="time" name="time" required>
+</div>
+<div class="form-row">
+<label for="duration">Duration:</label>
+<input type="number" id="duration" name="duration" min="1" max="4" required>
+</div>
+<button type="submit" class="book-meeting-btn">Book Meeting</button>
+</form>
+</section>
+
+
+    <section>
+        <h2>Your Upcoming Meetings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mentor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mentor 1</td>
+                    <td>2023-03-16</td>
+                    <td>10:00 AM</td>
+                    <td>1 hour</td>
+                </tr>
+                <tr>
+                    <td>Mentor 2</td>
+                    <td>2023-03-17</td>
+                    <td>2:00 PM</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>Mentor 3</td>
+                    <td>2023-03-18</td>
+                    <td>3:00 PM</td>
+                    <td>1.5 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+
+</body>
+</html>
+      
